@@ -1,0 +1,1 @@
+const{crearArchivo:crearArchivo}=require("./helpers/multiplicar"),argv=require("./config/yargs"),colors=require("colors");console.clear(),crearArchivo(argv.b,argv.l).then((r=>console.log(r.green,"Creado".blue))).catch((r=>console.log(r).red));
